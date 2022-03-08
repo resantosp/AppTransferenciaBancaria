@@ -23,7 +23,15 @@ namespace TransferenciaBanc
                     case "3":
                         Withdraw();
                         break;
-                    ///...continue
+                    case "4":
+                        Deposit();
+                        break;
+                    case "5":
+                        Transfer();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
                     
                     default:
                         throw new ArgumentOutOfRangeException();
