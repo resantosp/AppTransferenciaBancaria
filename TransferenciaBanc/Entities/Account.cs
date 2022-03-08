@@ -8,6 +8,7 @@ namespace TransferenciaBanc
         private string Name { get; set; }
 
         //Construct method: it's created in the moment that I create my object
+        //My object needs to inherit all these props
         public Account(AccountType account_type, double account_balance, double credit, string name)
         {
             this.accountType = account_type;
@@ -45,7 +46,25 @@ namespace TransferenciaBanc
             System.Console.WriteLine($"{this.Name}'s Current Balance: {this.Balance}");
         }
 
-        //Transfer Method (5:33)
+        //Transfer Method
+        public void Transfer(double transferAmount, Account destinationAcc)
+        {
+            if (this.Withdraw(transferAmount))
+            {
+                destinationAcc.Deposit(transferAmount);
+            }
+        }
+
+        //Method to display all data about the customer account
+        public override string ToString()
+        {
+            string dataAcc = "";
+            dataAcc += "| Account Type: " + this.accountType + " | ";
+            dataAcc += "Name: " + this.Name + " | ";
+            dataAcc += "Current Balance: " + this.Balance + " | ";
+            dataAcc += "Credit: " + this.Credit + " | ";
+            return dataAcc;
+        }
     }
 
     

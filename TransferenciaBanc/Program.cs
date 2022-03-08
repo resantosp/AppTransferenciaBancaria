@@ -6,7 +6,49 @@ namespace TransferenciaBanc
     {
         static void Main (string[] args)
         {
-            Account myAccount = new Account();
+            // Account myAccount = new Account(AccountType.NaturalPerson, 70, 490, "Renata dos Santos Pinto");System.Console.WriteLine(myAccount.ToString());
+
+            string userOption = GeneralMenu();
+
+            while (userOption.ToUpper() != "X")
+            {
+                switch (userOption)
+                {
+                    case "1":
+                        AccountsList();
+                        break;
+                    case "2":
+                        CreateAccount();
+                        break;
+                    case "3":
+                        Withdraw();
+                        break;
+                    ///...continue
+                    
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
+
+        //Criar um Menu para ADMIN e um para usuário
+        private static string GeneralMenu()
+        {
+            System.Console.WriteLine("----------OCEAN BANK----------");
+            System.Console.WriteLine("What would you like to do?");
+
+            //Inserir as opção Listar Contas e Inserir Contas apenas para admins
+            System.Console.WriteLine("[1] - Ativated Accounts List");
+            System.Console.WriteLine("[2] - Creat New Account");
+            System.Console.WriteLine("[3] - Withdraw");
+            System.Console.WriteLine("[4] - Deposit");
+            System.Console.WriteLine("[5] - Transfer");
+            System.Console.WriteLine("[C] - Clean Screen");
+            System.Console.WriteLine("[X] - Exit");
+
+            string userOption = Console.ReadLine().ToUpper();
+            System.Console.WriteLine();
+            return userOption;
         }
     }
 }

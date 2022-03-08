@@ -1,0 +1,15 @@
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\bin\Debug\net6.0\TransferenciaBanc.exe
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\bin\Debug\net6.0\TransferenciaBanc.deps.json
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\bin\Debug\net6.0\TransferenciaBanc.runtimeconfig.json
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\bin\Debug\net6.0\TransferenciaBanc.dll
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\bin\Debug\net6.0\ref\TransferenciaBanc.dll
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\bin\Debug\net6.0\TransferenciaBanc.pdb
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.csproj.AssemblyReference.cache
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.AssemblyInfoInputs.cache
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.AssemblyInfo.cs
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.csproj.CoreCompileInputs.cache
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.dll
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\ref\TransferenciaBanc.dll
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.pdb
+C:\Users\55219\OneDrive\Documentos\GitHub\AppTransferenciaBancaria\TransferenciaBanc\obj\Debug\net6.0\TransferenciaBanc.genruntimeconfig.cache
