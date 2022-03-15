@@ -55,6 +55,9 @@ namespace TransferenciaBanc
             System.Console.Write("Insert [1] to Legal Person or [2] to Natural Person: ");
             int enterAccountType = Convert.ToInt32(Console.ReadLine());
 
+            System.Console.WriteLine("Insert the COMPLETE NAME of the client: ");
+            string enterCustomerName = Console.ReadLine();
+
             
         }
 
