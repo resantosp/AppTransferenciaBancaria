@@ -49,8 +49,13 @@ namespace TransferenciaBanc
 
         private static void CreateAccount()
         {
+            System.Console.WriteLine("----------CREATE NEW ACCOUNT----------");
+
             //Pro futuro: incluir validação se o usuário digitou mesmo número ou não
-            throw new NotImplementedException();
+            System.Console.Write("Insert [1] to Legal Person or [2] to Natural Person: ");
+            int enterAccountType = Convert.ToInt32(Console.ReadLine());
+
+            
         }
 
         //Criar um Menu para ADMIN e um para usuário
