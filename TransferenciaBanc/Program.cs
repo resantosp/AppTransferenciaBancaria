@@ -10,40 +10,47 @@ namespace TransferenciaBanc
 
             string userOption = GeneralMenu();
 
-            while (userOption.ToUpper() != "X")
-            {
-                switch (userOption)
-                {
-                    case "1":
-                        AccountsList();
-                        break;
-                    case "2":
-                        CreateAccount();
-                        break;
-                    case "3":
-                        Withdraw();
-                        break;
-                    case "4":
-                        Deposit();
-                        break;
-                    case "5":
-                        Transfer();
-                        break;
-                    case "C":
-                        Console.Clear();
-                        break;
+            // while (userOption.ToUpper() != "X")
+            // {
+            //     switch (userOption)
+            //     {
+            //         case "1":
+            //             AccountsList();
+            //             break;
+            //         case "2":
+            //             CreateAccount();
+            //             break;
+            //         case "3":
+            //             Withdraw();
+            //             break;
+            //         case "4":
+            //             Deposit();
+            //             break;
+            //         case "5":
+            //             Transfer();
+            //             break;
+            //         case "C":
+            //             Console.Clear();
+            //             break;
                     
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
-            }
+            //         default:
+            //             throw new ArgumentOutOfRangeException();
+            //     }
+
+            //     userOption = GeneralMenu();
+
+            // }
+
+            System.Console.WriteLine("Thank you for choosing our services.");
+            Console.ReadLine();
+
         }
 
         //Criar um Menu para ADMIN e um para usuário
         private static string GeneralMenu()
         {
             System.Console.WriteLine("----------OCEAN BANK----------");
-            System.Console.WriteLine("What would you like to do?");
+            System.Console.WriteLine("\nWelcome! What would you like to do?");
 
             //Inserir as opção Listar Contas e Inserir Contas apenas para admins
             System.Console.WriteLine("[1] - Ativated Accounts List");
@@ -54,6 +61,7 @@ namespace TransferenciaBanc
             System.Console.WriteLine("[C] - Clean Screen");
             System.Console.WriteLine("[X] - Exit");
 
+            System.Console.WriteLine();
             string userOption = Console.ReadLine().ToUpper();
             System.Console.WriteLine();
             return userOption;
