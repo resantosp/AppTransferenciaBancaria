@@ -4,46 +4,52 @@ namespace TransferenciaBanc
 {
     class Program
     {
+        static List<Account> listAccount = new List<Account>();
         static void Main (string[] args)
         {
             // Account myAccount = new Account(AccountType.NaturalPerson, 70, 490, "Renata dos Santos Pinto");System.Console.WriteLine(myAccount.ToString());
 
             string userOption = GeneralMenu();
 
-            // while (userOption.ToUpper() != "X")
-            // {
-            //     switch (userOption)
-            //     {
-            //         case "1":
-            //             AccountsList();
-            //             break;
-            //         case "2":
-            //             CreateAccount();
-            //             break;
-            //         case "3":
-            //             Withdraw();
-            //             break;
-            //         case "4":
-            //             Deposit();
-            //             break;
-            //         case "5":
-            //             Transfer();
-            //             break;
-            //         case "C":
-            //             Console.Clear();
-            //             break;
+            while (userOption.ToUpper() != "X")
+            {
+                switch (userOption)
+                {
+                    case "1":
+                        //AccountsList();
+                        break;
+                    case "2":
+                        CreateAccount();
+                        break;
+                    case "3":
+                        //Withdraw();
+                        break;
+                    case "4":
+                        //Deposit();
+                        break;
+                    case "5":
+                        //Transfer();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
                     
-            //         default:
-            //             throw new ArgumentOutOfRangeException();
-            //     }
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
 
-            //     userOption = GeneralMenu();
+                userOption = GeneralMenu();
 
-            // }
+            }
 
             System.Console.WriteLine("Thank you for choosing our services.");
             Console.ReadLine();
 
+        }
+
+        private static void CreateAccount()
+        {
+            throw new NotImplementedException();
         }
 
         //Criar um Menu para ADMIN e um para usuário
