@@ -49,6 +49,7 @@ namespace TransferenciaBanc
 
         private static void CreateAccount()
         {
+            //Pro futuro: incluir validação se o usuário digitou mesmo número ou não
             throw new NotImplementedException();
         }
 
