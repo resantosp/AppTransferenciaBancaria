@@ -4,6 +4,7 @@ namespace TransferenciaBanc
 {
     class Program
     {
+        //Essa lista de contas vai sumir assim que o programa fechar
         static List<Account> listAccount = new List<Account>();
         static void Main (string[] args)
         {
@@ -58,6 +59,20 @@ namespace TransferenciaBanc
             System.Console.WriteLine("Insert the COMPLETE NAME of the client: ");
             string enterCustomerName = Console.ReadLine();
 
+            System.Console.WriteLine("Insert the Account's Balance: ");
+            double enterBalance = Convert.ToDouble(Console.ReadLine());
+
+            System.Console.WriteLine("Insert the Account's Credit");
+            double enterCredit = Convert.ToDouble(Console.ReadLine());
+
+            //Criando um objeto para a nova conta
+            Account newAccount = new Account(account_type: (AccountType)enterAccountType, 
+                                            account_balance: enterBalance,
+                                            name: enterCustomerName,
+                                            credit: enterCredit);
+
+
+            listAccount.Add(newAccount);
             
         }
 
