@@ -53,6 +53,8 @@ namespace TransferenciaBanc
         {
             System.Console.WriteLine("----------ACCOUNTS LIST----------");
 
+            System.Console.WriteLine();
+
             if (listAccount.Count == 0)
             {
                 System.Console.WriteLine("Zero Accounts Activated");
@@ -64,14 +66,19 @@ namespace TransferenciaBanc
             for (int i = 0; i < listAccount.Count; i++)
             {
                 //Criando um objeto e populando esse objeto
-                Account account = listAccount[i]
-                Console.Write("")
+                //Ou seja, pegar o item i da lista e jogando no objeto account criado
+                Account account = listAccount[i];
+                Console.Write($"#{i} - ");
+                Console.WriteLine(account);
             }
+
+            System.Console.WriteLine();
         }
 
         private static void CreateAccount()
         {
             System.Console.WriteLine("----------CREATE NEW ACCOUNT----------");
+            System.Console.WriteLine();
 
             //Pro futuro: incluir validação se o usuário digitou mesmo número ou não
             System.Console.Write("Insert [1] to Legal Person or [2] to Natural Person: ");
@@ -95,6 +102,8 @@ namespace TransferenciaBanc
 
             listAccount.Add(newAccount);
             
+            System.Console.WriteLine();
+
         }
 
         //Criar um Menu para ADMIN e um para usuário
@@ -102,6 +111,7 @@ namespace TransferenciaBanc
         {
             System.Console.WriteLine("----------OCEAN BANK----------");
             System.Console.WriteLine("\nWelcome! What would you like to do?");
+            System.Console.WriteLine();
 
             //Inserir as opção Listar Contas e Inserir Contas apenas para admins
             System.Console.WriteLine("[1] - Ativated Accounts List");
