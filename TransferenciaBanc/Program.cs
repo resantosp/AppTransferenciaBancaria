@@ -17,7 +17,7 @@ namespace TransferenciaBanc
                 switch (userOption)
                 {
                     case "1":
-                        //AccountsList();
+                        AccountsList();
                         break;
                     case "2":
                         CreateAccount();
@@ -46,6 +46,27 @@ namespace TransferenciaBanc
             System.Console.WriteLine("Thank you for choosing our services.");
             Console.ReadLine();
 
+        }
+
+
+        private static void AccountsList()
+        {
+            System.Console.WriteLine("----------ACCOUNTS LIST----------");
+
+            if (listAccount.Count == 0)
+            {
+                System.Console.WriteLine("Zero Accounts Activated");
+                //Aqui o return vai fazer o programa sair do método sem nem ir para o for abaixo
+                return;
+            }
+
+            //Percorrer a lista de contas
+            for (int i = 0; i < listAccount.Count; i++)
+            {
+                //Criando um objeto e populando esse objeto
+                Account account = listAccount[i]
+                Console.Write("")
+            }
         }
 
         private static void CreateAccount()
