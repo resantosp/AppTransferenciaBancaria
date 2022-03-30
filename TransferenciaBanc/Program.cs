@@ -50,7 +50,10 @@ namespace TransferenciaBanc
 
         private static void WithdrawMethod()
         {
-            
+            System.Console.WriteLine("Inform the Account Number: ");
+            int accountIndex = Convert.ToInt32(Console.ReadLine);
+
+            System.Console.WriteLine();
         }
 
         private static void AccountsList()
