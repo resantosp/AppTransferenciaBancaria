@@ -23,7 +23,7 @@ namespace TransferenciaBanc
                         CreateAccount();
                         break;
                     case "3":
-                        //Withdraw();
+                        Withdraw();
                         break;
                     case "4":
                         //Deposit();
@@ -48,6 +48,10 @@ namespace TransferenciaBanc
 
         }
 
+        private static void WithdrawMethod()
+        {
+            
+        }
 
         private static void AccountsList()
         {
