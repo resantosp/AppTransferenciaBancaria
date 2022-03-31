@@ -58,6 +58,7 @@ namespace TransferenciaBanc
 
             System.Console.WriteLine();
             listAccount[accountIndex].Withdraw(amountWithdraw);
+            System.Console.WriteLine();
         }
 
         private static void DepositMethod()
@@ -70,11 +71,24 @@ namespace TransferenciaBanc
 
             System.Console.WriteLine();
             listAccount[accountIndex].Deposit(amountDeposit);
+            System.Console.WriteLine();
         }
 
         private static void TransferMethod()
         {
-            
+            System.Console.Write("From (Account Number): ");
+            int indexAccountFrom = Convert.ToInt32(Console.ReadLine());
+
+            System.Console.Write("To (Account Number): ");
+            int indexAccountTo = Convert.ToInt32(Console.ReadLine());
+
+            System.Console.Write("Inform the amount: ");
+            double amountTransfer = Convert.ToDouble(Console.ReadLine());
+
+            System.Console.WriteLine();
+            listAccount[indexAccountFrom].Transfer(amountTransfer, listAccount[indexAccountTo]);
+            System.Console.WriteLine();
+
         }
 
         private static void AccountsList()
