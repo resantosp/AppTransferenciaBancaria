@@ -53,7 +53,10 @@ namespace TransferenciaBanc
             System.Console.WriteLine("Inform the Account Number: ");
             int accountIndex = Convert.ToInt32(Console.ReadLine);
 
-            System.Console.WriteLine();
+            System.Console.WriteLine("Inform the amount: ");
+            double amountWithdraw = Convert.ToDouble(Console.ReadLine);
+
+            listAccount[accountIndex].Withdraw(amountWithdraw);
         }
 
         private static void AccountsList()
