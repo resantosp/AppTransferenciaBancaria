@@ -23,13 +23,13 @@ namespace TransferenciaBanc
                         CreateAccount();
                         break;
                     case "3":
-                        Withdraw();
+                        WithdrawMethod();
                         break;
                     case "4":
-                        //Deposit();
+                        DepositMethod();
                         break;
                     case "5":
-                        //Transfer();
+                        TransferMethod();
                         break;
                     case "C":
                         Console.Clear();
@@ -50,13 +50,31 @@ namespace TransferenciaBanc
 
         private static void WithdrawMethod()
         {
-            System.Console.WriteLine("Inform the Account Number: ");
-            int accountIndex = Convert.ToInt32(Console.ReadLine);
+            System.Console.Write("Inform the Account Number: ");
+            int accountIndex = Convert.ToInt32(Console.ReadLine());
 
-            System.Console.WriteLine("Inform the amount: ");
-            double amountWithdraw = Convert.ToDouble(Console.ReadLine);
+            System.Console.Write("Inform the amount: ");
+            double amountWithdraw = Convert.ToDouble(Console.ReadLine());
 
+            System.Console.WriteLine();
             listAccount[accountIndex].Withdraw(amountWithdraw);
+        }
+
+        private static void DepositMethod()
+        {
+            System.Console.Write("Inform the Account Number: ");
+            int accountIndex = Convert.ToInt32(Console.ReadLine());
+
+            System.Console.Write("Inform the amount: ");
+            double amountDeposit = Convert.ToDouble(Console.ReadLine());
+
+            System.Console.WriteLine();
+            listAccount[accountIndex].Deposit(amountDeposit);
+        }
+
+        private static void TransferMethod()
+        {
+            
         }
 
         private static void AccountsList()
